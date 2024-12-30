@@ -101,8 +101,6 @@ export interface Shortcut {
   /**
    * A brief description of the shortcut's functionality.
    *
-   * Available only on Android platforms.
-   *
    * @since 6.0.0
    */
   description?: string;
@@ -124,6 +122,22 @@ export interface Shortcut {
    * @since 6.0.0
    */
   title: string;
+
+  /**
+   * The icon to display.
+   * On Android use the constant value of the icons.
+   * Available Android icons: https://developer.android.com/reference/android/R.drawable
+   *
+   * On iOS, the icon and description can only be used together and the icon is the raw representation of the
+   * UIApplicationShortcutIcon.IconType enum.
+   *
+   *
+   * @since 6.1.0
+   * @example
+   * Android: 17301547 (R.drawable.ic_input_add)
+   * iOS: 6 (.share)
+   */
+  icon?: number;
 }
 
 /**

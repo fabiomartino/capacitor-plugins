@@ -230,11 +230,12 @@ Represents the metadata for an individual app shortcut.
 
 App shortcuts are quick actions that can be accessed directly from the app's icon.
 
-| Prop              | Type                | Description                                                                                                                                            | Since |
-| ----------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
-| **`description`** | <code>string</code> | A brief description of the shortcut's functionality. Available only on Android platforms.                                                              | 6.0.0 |
-| **`id`**          | <code>string</code> | A unique identifier for the shortcut. This `id` is used to differentiate between shortcuts and is required for actions like updates or event handling. | 6.0.0 |
-| **`title`**       | <code>string</code> | The display name of the shortcut. This `title` is shown to the user as the shortcut's label on the home screen or app menu.                            | 6.0.0 |
+| Prop              | Type                | Description                                                                                                                                                                                                                                                                                                | Since |
+| ----------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| **`description`** | <code>string</code> | A brief description of the shortcut's functionality.                                                                                                                                                                                                                                                       | 6.0.0 |
+| **`id`**          | <code>string</code> | A unique identifier for the shortcut. This `id` is used to differentiate between shortcuts and is required for actions like updates or event handling.                                                                                                                                                     | 6.0.0 |
+| **`title`**       | <code>string</code> | The display name of the shortcut. This `title` is shown to the user as the shortcut's label on the home screen or app menu.                                                                                                                                                                                | 6.0.0 |
+| **`icon`**        | <code>number</code> | The icon to display. On Android use the constant value of the icons. Available Android icons: https://developer.android.com/reference/android/R.drawable On iOS, the icon and description can only be used together and the icon is the raw representation of the UIApplicationShortcutIcon.IconType enum. | 6.1.0 |
 
 
 #### SetOptions
